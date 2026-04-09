@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Profile - Nguyễn Thị Phương Thảo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="profile-card">
+            <div class="avatar-shell">
+                <img class="avatar" src="avatar.jpg" alt="Avatar Nguyễn Thị Phương Thảo">
+            </div>
+            <div class="profile-content">
+                <span class="tag">Digital Profile</span>
+                <h1>Nguyễn Thị Phương Thảo</h1>
+                <p class="role">Nhân viên marketing</p>
+                <p class="description">Chuyên sáng tạo chiến dịch, kết nối thương hiệu và xây dựng hình ảnh chuyên nghiệp trên mạng xã hội.</p>
+                <a class="profile-link" href="https://www.facebook.com/thao.ntp09" target="_blank" rel="noreferrer">Xem Facebook</a>
+                <button id="giftButton" type="button">Tặng quà</button>
+            </div>
+        </div>
+        <div class="message-form">
+            <h2>Để lại lời nhắn</h2>
+            <form id="messageForm">
+                <label for="senderName">Tên của bạn:</label>
+                <input type="text" id="senderName" name="senderName" required>
+                
+                <label for="messageContent">Nội dung tin nhắn:</label>
+                <textarea id="messageContent" name="messageContent" rows="4" required></textarea>
+                
+                <button type="submit">Gửi tin nhắn</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
