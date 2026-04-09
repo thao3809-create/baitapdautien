@@ -53,10 +53,7 @@ messageForm.addEventListener('submit', async function(event) {
     const messageContent = document.getElementById('messageContent').value;
 
     try {
-        const baseURL = window.location.hostname === 'localhost' 
-            ? 'http://localhost:3001' 
-            : window.location.origin;
-        const response = await fetch(`${baseURL}/send-message`, {
+        const response = await fetch('/.netlify/functions/send-message', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
